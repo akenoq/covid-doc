@@ -1,0 +1,9 @@
+version: "3"
+services:
+  covid-doc:
+    build:
+      context: ./covid-doc
+      dockerfile: Dockerfile
+    image: covid-doc:tag
+    ports:
+      - "5010:5003"
